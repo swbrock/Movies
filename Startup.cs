@@ -54,6 +54,7 @@ namespace Movies
 
             app.UseEndpoints(endpoints =>
             {
+                //create endpoint and allow it to pass parameters so we can update and delete
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");

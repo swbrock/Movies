@@ -13,7 +13,9 @@ namespace Movies.Models
             //Leave blank
         }
 
+        //creates the table responses into the database
         public DbSet<MovieLists> Responses { get; set; }
+        //We need to seed these three movies into the database
         protected override void OnModelCreating(ModelBuilder mb)
         {
             mb.Entity<MovieLists>().HasData(

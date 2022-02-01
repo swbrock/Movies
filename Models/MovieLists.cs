@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Movies.Models
 {
+    //Create the class movielists where we can hold all of the variables
     public class MovieLists
     {
         [Key]
